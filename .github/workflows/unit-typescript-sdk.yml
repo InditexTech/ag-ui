@@ -34,9 +34,13 @@ jobs:
 
       - name: Detect fork PR
         id: fork-check
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          HEAD_REPO_FULL_NAME: ${{ github.event.pull_request.head.repo.full_name }}
+          REPOSITORY: ${{ github.repository }}
         run: |
-          if [[ "${{ github.event_name }}" == "pull_request" && \
-                "${{ github.event.pull_request.head.repo.full_name }}" != "${{ github.repository }}" ]]; then
+          if [[ "$EVENT_NAME" == "pull_request" && \
+                "$HEAD_REPO_FULL_NAME" != "$REPOSITORY" ]]; then
             echo "prefix=fork-" >> "$GITHUB_OUTPUT"
           else
             echo "prefix=" >> "$GITHUB_OUTPUT"
