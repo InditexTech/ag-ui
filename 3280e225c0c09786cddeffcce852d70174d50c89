@@ -1,0 +1,20 @@
+integrations/mastra/typescript/src/__tests__/message-conversion.test.ts
+  s_f330759c71c443::t_59842fd669b08a 367,397,434,511,537
+  s_f330759c71c443::t_a6d1e97168d2f9 595-597,599,601-605,607-614,618
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.8",
+  "base_commit_sha": "3280e225c0c09786cddeffcce852d70174d50c89",
+  "prompts": {},
+  "sessions": {
+    "s_f330759c71c443": {
+      "agent_id": {
+        "tool": "github-copilot",
+        "id": "7aef7102-c518-498a-a603-8288c94d890f",
+        "model": "unknown"
+      },
+      "human_author": "Carlos Corton Cobas <carloscco@inditex.com>"
+    }
+  }
+}
