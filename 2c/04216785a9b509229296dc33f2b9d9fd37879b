@@ -1,0 +1,19 @@
+.github/workflows/unit-typescript-sdk.yml
+  s_ca8cfc9dd6e73e::t_b66c0387eba62c 37-40,42-43
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "2c04216785a9b509229296dc33f2b9d9fd37879b",
+  "prompts": {},
+  "sessions": {
+    "s_ca8cfc9dd6e73e": {
+      "agent_id": {
+        "tool": "github-copilot",
+        "id": "s_ca8cfc9dd6e73e",
+        "model": "unknown"
+      },
+      "human_author": "Ivan Alvarez Sabin <ivanasabi@ext.inditex.com>"
+    }
+  }
+}
